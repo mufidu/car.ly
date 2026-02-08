@@ -47,8 +47,9 @@
     }
 
     &__img {
-        height: 100%;
-        transform: translateX(-4rem) scale(1.4);
+        width: 100%;
+        height: auto;
+        transform: scale(1.4);
         transition: all 0.5s;
     }
 

@@ -103,10 +103,11 @@
     }
 
     &__heading {
-        @apply text-3xl font-light text-white text-right absolute uppercase;
+        @apply text-2xl font-light text-white text-right absolute uppercase;
         top: 12rem;
         right: 2rem;
         width: 75%;
+        font-size: 2.2rem;
     }
 
     &__heading-span {
@@ -173,7 +174,7 @@
     }
 
     &__price-value {
-        @apply text-6xl font-thin;
+        @apply text-5xl font-thin;
     }
 }
 
@@ -183,13 +184,14 @@
         clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
         &__container {
-            @apply flex-col w-3/4;
+            @apply flex-col items-center;
         }
     }
 
     .card {
         height: auto;
         @apply rounded-xl bg-white shadow-xl w-full mb-12;
+        max-width: 40rem;
 
         &__side {
             height: auto;

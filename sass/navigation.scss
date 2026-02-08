@@ -102,8 +102,8 @@
         &,
         &::before,
         &::after {
-            width: 3rem;
-            height: 2px;
+            width: 2rem;
+            height: 1.5px;
             @apply bg-gray-700 inline-block;
         }
 
@@ -116,19 +116,19 @@
         }
 
         &::before {
-            top: -0.8rem;
+            top: -0.6rem;
         }
         &::after {
-            top: 0.8rem;
+            top: 0.6rem;
         }
     }
 
     &__button:hover &__icon::before {
-        top: -1rem;
+        top: -0.7rem;
     }
 
     &__button:hover &__icon::after {
-        top: 1rem;
+        top: 0.7rem;
     }
 
     &__checkbox:checked + &__button &__icon {

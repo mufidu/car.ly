@@ -83,7 +83,8 @@
         width: 49%;
 
         @media (max-width: 900px) {
-            @apply w-full mb-4;
+            @apply w-full mb-8;
+            display: block;
         }
     }
 
