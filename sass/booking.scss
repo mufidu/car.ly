@@ -79,12 +79,12 @@
     }
 
     &__radio-group {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         width: 49%;
 
         @media (max-width: 900px) {
-            @apply w-full mb-8;
-            display: block;
+            @apply w-full mb-6;
         }
     }
 
@@ -93,7 +93,8 @@
     }
 
     &__radio-label {
-        @apply text-base cursor-pointer pl-12 relative;
+        @apply text-base cursor-pointer pl-12 relative flex items-center;
+        line-height: 2rem;
     }
 
     &__radio-button {

@@ -5,8 +5,8 @@
 
     &__button {
         @apply bg-white rounded-full fixed z-50 shadow-lg text-center cursor-pointer;
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
         top: 6rem;
         right: 6rem;
 
@@ -22,8 +22,8 @@
     }
 
     &__background {
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         position: fixed;
         top: 6.5rem;
@@ -97,7 +97,7 @@
     /* Icon */
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
 
         &,
         &::before,

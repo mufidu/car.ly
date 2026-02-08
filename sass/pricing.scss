@@ -17,7 +17,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem; /* Adjusted height */
+    height: 55rem; /* Increased height */
     width: 30%; /* Set width to fit 3 in a row */
 
     &__side {
@@ -103,11 +103,11 @@
     }
 
     &__heading {
-        @apply text-2xl font-light text-white text-right absolute uppercase;
+        @apply text-xl font-light text-white text-right absolute uppercase;
         top: 12rem;
         right: 2rem;
         width: 75%;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     &__heading-span {
@@ -139,14 +139,14 @@
     }
 
     &__details {
-        padding: 3rem;
+        padding: 2rem; /* Reduced padding */
 
         ul {
             @apply list-none w-4/5 mx-auto;
 
             li {
-                @apply text-center text-gray-600 p-4 border-b border-gray-200;
-                font-size: 1.5rem;
+                @apply text-center text-gray-600 p-2 border-b border-gray-200; /* Reduced padding */
+                font-size: 1.4rem; /* Reduced font size */
 
                 &:last-child {
                     @apply border-none;
@@ -166,7 +166,7 @@
     }
 
     &__price-box {
-        @apply text-white mb-32;
+        @apply text-white mb-24; /* Reduced margin */
     }
 
     &__price-only {
@@ -174,7 +174,7 @@
     }
 
     &__price-value {
-        @apply text-5xl font-thin;
+        @apply text-4xl font-thin; /* Reduced font size */
     }
 }
 
@@ -219,7 +219,7 @@
             left: 0;
             transform: translate(0);
             width: 100%;
-            padding: 7rem 4rem 4rem 4rem;
+            padding: 4rem;
         }
 
         &__price-box {
@@ -227,7 +227,7 @@
         }
 
         &__price-value {
-            @apply text-6xl;
+            @apply text-4xl;
         }
     }
 }
