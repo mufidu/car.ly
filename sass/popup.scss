@@ -1,0 +1,93 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &__content {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl overflow-hidden opacity-0 transition-all duration-500 delay-200;
+        width: 75%;
+        display: table;
+        transform: translate(-50%, -50%) scale(0.25);
+
+        @media (max-width: 900px) {
+            width: 95%;
+            display: block;
+        }
+    }
+
+    &__left {
+        width: 33.333333%;
+        display: table-cell;
+
+        @media (max-width: 900px) {
+            display: block;
+            width: 100%;
+            @apply flex;
+        }
+    }
+
+    &__right {
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+        @media (max-width: 900px) {
+            display: block;
+            width: 100%;
+            padding: 2rem 3rem;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+
+        @media (max-width: 900px) {
+            width: 50%;
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid #eee;
+        hyphens: auto;
+
+        @media (max-width: 900px) {
+            column-count: 1;
+        }
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            @apply text-gray-700 absolute top-4 right-6 text-4xl no-underline leading-none transition-all;
+        }
+
+        &:hover {
+            @apply text-indigo-500;
+        }
+    }
+}

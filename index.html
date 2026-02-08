@@ -21,6 +21,33 @@
         <title>Car.ly</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="###" class="navigation__link">About Car.ly</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="###" class="navigation__link">Your benefits</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="###" class="navigation__link">Popular tours</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="###" class="navigation__link">Stories</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="###" class="navigation__link">Book now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <div class="header__logo">
                 <img src="./assets/caarz.webp" alt="Caarz logo" />
@@ -131,11 +158,300 @@
             <section class="pricing">
                 <h2>Our pricing plan</h2>
                 <div class="pricing__container">
-                    <div class="price--1"></div>
-                    <div class="price--2"></div>
-                    <div class="price--3"></div>
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    The City Cruiser
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>5 seats</li>
+                                    <li>Manual/Automatic</li>
+                                    <li>100km/day included</li>
+                                    <li>GPS included</li>
+                                    <li>Basic Insurance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">Only</div>
+                                    <div class="card__price-value">$50</div>
+                                </div>
+                                <a href="#popup" class="button button--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    The Premium
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>5 seats</li>
+                                    <li>Automatic</li>
+                                    <li>Unlimited mileage</li>
+                                    <li>Chauffeur optional</li>
+                                    <li>Full Insurance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">Only</div>
+                                    <div class="card__price-value">$150</div>
+                                </div>
+                                <a href="#popup" class="button button--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    The Sportster
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>2 seats</li>
+                                    <li>Manual</li>
+                                    <li>200km/day included</li>
+                                    <li>Track ready</li>
+                                    <li>Full Insurance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">Only</div>
+                                    <div class="card__price-value">$300</div>
+                                </div>
+                                <a href="#popup" class="button button--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__bg">
+                    <img src="./assets/bigcar2.webp" alt="Background" />
+                </div>
+
+                <div class="reviews__container">
+                    <div class="u-center-text mb-20">
+                        <h2>We make people genuinely happy</h2>
+                    </div>
+
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img
+                                src="https://i.pravatar.cc/150?img=12"
+                                alt="Person on a tour"
+                                class="review__img"
+                            />
+                            <figcaption class="review__caption">
+                                Mary Smith
+                            </figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3>I drove the best car of my life!</h3>
+                            <p>
+                                I was really impressed with the quality of the service.
+                                The car was clean, fast, and exactly what I wanted.
+                                The booking process was smooth and easy. Highly recommended!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img
+                                src="https://i.pravatar.cc/150?img=32"
+                                alt="Person on a tour"
+                                class="review__img"
+                            />
+                            <figcaption class="review__caption">
+                                Jack Wilson
+                            </figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3>The service was impeccable</h3>
+                            <p>
+                                Everything from the pickup to the drop-off was handled
+                                professionally. The staff was friendly and the car condition
+                                was pristine. I will definitely use Car.ly again.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="u-center-text mt-24 text-center">
+                        <a href="###" class="button__text">Read all stories &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking">
+                <div class="booking__container">
+                    <div class="booking__form">
+                        <form action="#" class="form">
+                            <div class="mb-8">
+                                <h2 class="text-3xl font-bold uppercase text-gray-700">
+                                    Start booking now
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input
+                                    type="text"
+                                    class="form__input"
+                                    placeholder="Full name"
+                                    id="name"
+                                    required
+                                />
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input
+                                    type="email"
+                                    class="form__input"
+                                    placeholder="Email address"
+                                    id="email"
+                                    required
+                                />
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input
+                                        type="radio"
+                                        class="form__radio-input"
+                                        id="self"
+                                        name="drive"
+                                        checked
+                                    />
+                                    <label for="self" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Self-drive
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input
+                                        type="radio"
+                                        class="form__radio-input"
+                                        id="chauffeur"
+                                        name="drive"
+                                    />
+                                    <label for="chauffeur" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        With Chauffeur
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="button">Next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="./assets/caarz.webp" alt="Full logo" class="footer__logo" />
+            </div>
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="###" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="###" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="###" class="footer__link">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="###" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="###" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__copyright">
+                        Built by <a href="###" class="footer__link">Mufid</a> for online
+                        course <a href="###" class="footer__link">Advanced CSS and Sass</a>.
+                        Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to
+                        use this webpage for both personal and commercial use, but NOT to
+                        claim it as your own design. A credit to the original author,
+                        Jonas Schmedtmann, is of course highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./assets/car1.webp" alt="Car" class="popup__img" />
+                    <img src="./assets/car2.webp" alt="Car" class="popup__img" />
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="text-3xl font-bold uppercase mb-4 text-gray-800">
+                        Start booking now
+                    </h2>
+                    <h3 class="text-xl font-bold uppercase mb-4 text-gray-600">
+                        Important &ndash; Please read these terms before booking
+                    </h3>
+                    <p class="popup__text text-gray-600">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
+                        sed risus pretium quam. Aliquam sem et tortor consequat id.
+                        Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum
+                        neque egestas congue. Placerat orci nulla pellentesque dignissim
+                        enim sit. Vitae semper quis lectus nulla at volutpat diam ut
+                        venenatis. Malesuada pellentesque elit eget gravida cum sociis
+                        natoque penatibus et. Proin fermentum leo vel orci porta non
+                        pulvinar neque laoreet. Gravida neque convallis a cras semper.
+                        Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                        vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam
+                        libero justo laoreet sit. Amet massa vitae tortor condimentum
+                        lacinia quis vel eros donec. Sit amet facilisis magna etiam.
+                        Imperdiet sed euismod nisi porta.
+                    </p>
+                    <a href="###" class="button">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

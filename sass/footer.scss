@@ -1,0 +1,64 @@
+.footer {
+    @apply bg-gray-800 py-32 text-gray-200 text-base;
+
+    &__logo-box {
+        @apply text-center mb-20;
+    }
+
+    &__logo {
+        @apply w-32 inline-block;
+    }
+
+    &__navigation {
+        @apply border-t border-gray-600 pt-8 inline-block;
+        
+        @media (max-width: 900px) {
+            @apply w-full text-center;
+        }
+    }
+
+    &__list {
+        @apply list-none;
+    }
+
+    &__item {
+        @apply inline-block mr-6;
+        
+        &:last-child {
+            @apply mr-0;
+        }
+    }
+
+    &__link {
+        @apply text-gray-200 no-underline inline-block transition-all uppercase;
+        background-color: theme('colors.gray.800');
+
+        &:hover {
+            @apply text-indigo-400 transform scale-110 shadow-lg;
+        }
+    }
+
+    &__copyright {
+        @apply border-t border-gray-600 pt-8 float-right w-4/5 text-justify;
+
+        @media (max-width: 900px) {
+            @apply w-full float-none text-center mt-8;
+        }
+    }
+
+    &__row {
+        @apply flex justify-between w-3/4 mx-auto;
+
+        @media (max-width: 900px) {
+            @apply flex-col;
+        }
+    }
+    
+    &__col {
+        @apply w-1/2;
+
+        @media (max-width: 900px) {
+            @apply w-full;
+        }
+    }
+}
